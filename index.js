@@ -9,6 +9,8 @@ function StructuredLogging() {
 			if (req.body.clientname) {
 				clientname = req.body.clientname.toLowerCase();
 			}
+		} else if (req.url.includes('/client/assets')) {
+			clientname = null;
 		} else {
 			if(req.decodedToken.clientname){
 				clientname = req.decodedToken.clientname;
