@@ -12,9 +12,9 @@ function StructuredLogging() {
     } else if (
       req.url.includes('/client/assets') ||
       req.url.includes('/contact') ||
-      req.url.includes('/forget') ||
-      req.url.includes('/forget/username') ||
-      req.url.includes('/forget/password')
+      req.url.includes('/forgot') ||
+      req.url.includes('/forgot/username') ||
+      req.url.includes('/forgot/password')
     ) {
       clientname = null;
     } else {
