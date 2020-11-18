@@ -22,7 +22,7 @@ function StructuredLogging() {
         clientname = req.decodedToken.clientname;
       }
     }
-    if (req.query.name) {
+    if (req.query.name && typeof(req.query.name) === 'string') {
       ingredientName = req.query.name.toLowerCase();
     }
     var JSONLine = JSON.stringify({
