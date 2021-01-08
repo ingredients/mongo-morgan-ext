@@ -14,7 +14,8 @@ function StructuredLogging() {
       req.url.includes('/contact') ||
       req.url.includes('/forgot') ||
       req.url.includes('/forgot/username') ||
-      req.url.includes('/forgot/password')
+      req.url.includes('/forgot/password') ||
+      req.url.includes('/recaptcha')
     ) {
       clientname = null;
     } else {
